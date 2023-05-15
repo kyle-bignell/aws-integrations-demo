@@ -19,104 +19,12 @@
         <h1>AWS Integrations Demo</h1>
     </div>
 
-    <div class="container my-5 p-3 text-center">
-        <div class="alert alert-primary" role="alert">
-            AWS icons by <a href="https://awsicons.dev/" target="_blank">https://awsicons.dev/</a>. Source code
-            available on <a href="https://github.com/kyle-bignell/aws-integrations-demo/blob/master/index.html"
-                target="_blank">GitHub</a>.
-        </div>
-    </div>
-
-    <div class="container my-5 p-3 text-bg-light">
-        <h2>CloudFront + S3 - Static website hosting</h2>
-
-        <div class="my-3 p-3 d-flex row">
-            <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
-                    <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-CloudFront_32_svg__a">
-                                <stop stop-color="#4D27A8" offset="0%"></stop>
-                                <stop stop-color="#A166FF" offset="100%"></stop>
-                            </linearGradient>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd">
-                            <path d="M0 0h40v40H0z" fill="url(#Arch_Amazon-CloudFront_32_svg__a)"></path>
-                            <path
-                                d="M28 26.497c0-.828-.673-1.5-1.5-1.5s-1.5.672-1.5 1.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5zm1 0a2.503 2.503 0 01-2.5 2.5 2.503 2.503 0 01-2.5-2.5 2.503 2.503 0 012.5-2.501c1.379 0 2.5 1.122 2.5 2.5zm-14-8.004c0-.827-.673-1.5-1.5-1.5s-1.5.673-1.5 1.5c0 .828.673 1.501 1.5 1.501s1.5-.673 1.5-1.5zm1 0a2.503 2.503 0 01-2.5 2.502 2.503 2.503 0 01-2.5-2.502 2.503 2.503 0 012.5-2.5c1.379 0 2.5 1.122 2.5 2.5zm4-8.003c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zm-1 0a2.503 2.503 0 012.5-2.501c1.379 0 2.5 1.122 2.5 2.501a2.503 2.503 0 01-2.5 2.501 2.503 2.503 0 01-2.5-2.5zm14 9.504c0-4.638-2.485-8.93-6.494-11.25-.721.145-1.416.344-2.28.657l-.34-.94a19.87 19.87 0 011.233-.405A12.95 12.95 0 0020 6.99c-.844 0-1.675.087-2.487.246.587.343 1.108.686 1.615 1.071l-.604.797c-.715-.543-1.457-1-2.426-1.51a13.016 13.016 0 00-9.007 10.963 17.602 17.602 0 013.116-.349l.025 1a16.32 16.32 0 00-3.218.389c-.004.132-.014.267-.014.398 0 4.335 2.146 8.33 5.676 10.736-.627-1.87-.95-3.638-.95-5.36 0-.985.169-1.793.347-2.649l.124-.602.981.193-.125.614c-.176.839-.327 1.562-.327 2.443 0 1.952.432 3.973 1.302 6.166a12.844 12.844 0 009.978.821c.502-.99.875-1.927 1.189-3.009l.961.28c-.228.787-.49 1.5-.801 2.21.804-.361 1.564-.81 2.279-1.33-.173-.426-.35-.85-.554-1.26l.895-.446c.171.343.313.701.463 1.054C31.335 27.377 33 23.83 33 19.995zm1 0c0 4.365-1.982 8.403-5.44 11.079a13.69 13.69 0 01-4.042 2.173c-1.44.5-2.961.754-4.518.754-2.3 0-4.584-.573-6.606-1.659A13.98 13.98 0 016.029 19.15C6.37 13.303 10.377 8.245 16 6.57c3.527-1.063 7.589-.632 10.842 1.208A14.015 14.015 0 0134 19.994zm-15.343-7.272l-.658-.753c-1.12.978-1.992 2.017-3.01 3.586l.838.544c.965-1.485 1.784-2.464 2.83-3.377zm-1.845 7.431c2.296.788 4.299 2.047 6.305 3.96l.69-.722c-2.113-2.018-4.233-3.347-6.67-4.184l-.325.946zm7.011-6.828c1.876 2.862 2.933 6.005 3.14 9.34l-.998.061c-.196-3.158-1.198-6.136-2.978-8.852l.836-.549z"
-                                fill="#FFF"></path>
-                        </g>
-                    </svg>
-                    AWS CloudFront
-                </div>
-            </div>
-            <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
-                    <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-S3-Standard_32_svg__a">
-                                <stop stop-color="#1B660F" offset="0%"></stop>
-                                <stop stop-color="#6CAE3E" offset="100%"></stop>
-                            </linearGradient>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd">
-                            <path d="M0 0h40v40H0z" fill="url(#Arch_Amazon-S3-Standard_32_svg__a)"></path>
-                            <path
-                                d="M30.074 22.671l.2-1.301c1.703 1.016 1.735 1.444 1.732 1.46-.004.003-.308.24-1.932-.159zm-10.185-3.733a.995.995 0 01-.992.994.994.994 0 010-1.99c.547 0 .992.448.992.996zm7.869 12.33c0 .123-.495.31-.93.478l-.445.17c-.475.189-1.037.359-1.669.504-1.576.366-3.75.585-5.817.585-5.503 0-8.435-1.009-8.439-1.798L8.256 13.57c1.899 1.452 5.8 2.382 10.641 2.382 4.63 0 9.364-.897 11.584-2.472l-1.366 8.92c-2.871-.874-6.392-2.56-8.132-3.398l-.105-.05.002-.015c0-1.098-.89-1.99-1.983-1.99a1.988 1.988 0 00-1.983 1.99c0 1.097.89 1.99 1.983 1.99.733 0 1.367-.407 1.71-1.002 1.806.868 5.41 2.591 8.356 3.468l-1.205 7.874zm-8.86-23.273c6.676 0 11.857 1.86 11.894 3.465l-.024.148c-.27 1.579-5.352 3.35-11.87 3.35-6.388 0-10.71-1.725-10.89-3.375l-.015-.12c.023-1.678 4.397-3.468 10.904-3.468zm11.538 12.318l1.344-8.76c.001-.026.006-.05.006-.076C31.786 8.674 25.233 7 18.897 7 12.003 7 7 8.883 7 11.477l.003.061 2.468 19.73c0 2.6 7.852 2.732 9.426 2.732 2.137 0 4.394-.228 6.04-.61a12.74 12.74 0 001.81-.548l.432-.167c.844-.321 1.57-.598 1.564-1.331l1.18-7.684c.655.158 1.197.24 1.63.24.58-.001.973-.143 1.21-.428a.982.982 0 00.219-.832c-.127-.681-.923-1.405-2.546-2.327z"
-                                fill="#FFF"></path>
-                        </g>
-                    </svg>
-                    AWS S3
-                </div>
-            </div>
-            <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
-                    <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_AWS-CodePipeline_32_svg__a">
-                                <stop stop-color="#2E27AD" offset="0%"></stop>
-                                <stop stop-color="#527FFF" offset="100%"></stop>
-                            </linearGradient>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd">
-                            <path d="M0 0h40v40H0z" fill="url(#Arch_AWS-CodePipeline_32_svg__a)"></path>
-                            <path
-                                d="M14 14h3v-1h-3v1zm4.952 15.799l-.93-.366 3.589-9.126.93.366-3.589 9.126zm4.243-2.433l2.653-2.326-2.65-2.297.655-.756 3.083 2.673a.498.498 0 01.002.754l-3.083 2.704-.66-.752zm-9.578-2.081a.5.5 0 01.017-.733l3.072-2.716.662.749-2.668 2.358 2.674 2.594-.695.718-3.062-2.97zM33 13H19v1h14v1.251A1.75 1.75 0 0131.251 17H9.108A2.111 2.111 0 017 14.891V14h5v-1H7V9.109C7 7.946 7.946 7 9.108 7h21.904A1.99 1.99 0 0133 8.989V13zM11 33h18V18H11v15zM31.012 6H9.108A3.113 3.113 0 006 9.109v5.782A3.113 3.113 0 009.108 18H10v15.5a.5.5 0 00.5.5h19a.5.5 0 00.5-.5V18h1.251A2.752 2.752 0 0034 15.251V8.989A2.992 2.992 0 0031.012 6z"
-                                fill="#FFF"></path>
-                        </g>
-                    </svg>
-                    AWS CodePipline
-                </div>
-            </div>
-            <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
-                    <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient x1="0%" y1="100%" x2="100%" y2="0%"
-                                id="Arch_AWS-Certificate-Manager_32_svg__a">
-                                <stop stop-color="#BD0816" offset="0%"></stop>
-                                <stop stop-color="#FF5252" offset="100%"></stop>
-                            </linearGradient>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd">
-                            <path d="M0 0h40v40H0z" fill="url(#Arch_AWS-Certificate-Manager_32_svg__a)"></path>
-                            <path
-                                d="M17.832 19.63c.133.12.19.3.152.476l-.513 2.362 2.27-1.391a.496.496 0 01.52 0l2.252 1.388-.498-2.367a.5.5 0 01.15-.47l2.014-1.84-2.665-.515a.496.496 0 01-.352-.27l-1.166-2.387-1.194 2.394a.497.497 0 01-.35.265l-2.657.518 2.037 1.838zm-1.58 3.765l.701-3.22-2.562-2.312a.498.498 0 01.237-.856l3.393-.66 1.534-3.075c.085-.17.286-.306.447-.276.19.001.362.11.445.28l1.5 3.068 3.39.656a.498.498 0 01.241.854l-2.533 2.316.68 3.223a.498.498 0 01-.748.525L20 22.083l-3.002 1.84a.492.492 0 01-.548-.018.495.495 0 01-.198-.51zm16.727-13.3l-.003-2.101H6.994v2.101h25.985zM34 32.502a.496.496 0 01-.497.498h-3.566v-.994h3.07L32.98 11.09H6.994v20.917h18.968V33H6.497a.5.5 0 01-.352-.145.5.5 0 01-.145-.352V7.497C6 7.223 6.222 7 6.497 7H33.47c.276 0 .497.223.497.497L34 32.502zm-22.942-2.527h3.974v-.993h-3.974v.993zm5.962.023h6.955v-.993H17.02v.993zm-5.962-3h3.974v-.993h-3.974v.994zm5.962 0h10.93v-.993H17.02v.994z"
-                                fill="#FFF"></path>
-                        </g>
-                    </svg>
-                    AWS Certificate Manager
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="container my-5 p-3 text-bg-light">
         <h2>Cognito - Account management</h2>
 
-        <div class="my-3 p-3 d-flex row">
+        <div class="my-1 d-flex row">
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-Cognito_32_svg__a">
@@ -135,7 +43,7 @@
                 </div>
             </div>
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%"
@@ -157,18 +65,23 @@
             </div>
         </div>
 
-        <div class="my-5 show-for-login" style="display: none;">
+        <div class="my-3 show-for-login" style="display: none;">
             <h3>Login</h3>
-            <button class="btn btn-primary" onclick="login()">Login</button>
+
+            <div class="text-bg-info p-2 my-2">
+                <p>All integrations are protected behind user logins. AWS Cognito provides a JWT token
+                    that is used to authenticate against the APIs exposed by the API Gateway.</p>
+                <button class="btn btn-primary" onclick="login()">Login</button>
+            </div>
         </div>
     </div>
 
     <div class="container my-5 p-3 text-bg-light">
         <h2>S3 - File storage</h2>
 
-        <div class="my-3 p-3 d-flex row">
+        <div class="my-1 d-flex row">
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-API-Gateway_32_svg__a">
@@ -187,7 +100,7 @@
                 </div>
             </div>
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_AWS-Lambda_32_svg__a">
@@ -206,7 +119,7 @@
                 </div>
             </div>
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-S3-Standard_32_svg__a">
@@ -225,7 +138,7 @@
                 </div>
             </div>
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%"
@@ -244,6 +157,14 @@
                     </svg>
                     AWS IAM
                 </div>
+            </div>
+        </div>
+
+        <div class="my-3">
+            <div class="text-bg-info p-2 my-2">
+                <p class="m-0"><span class="badge text-bg-warning">Requires login</span>
+                    Retrieve a list of all files stored in the demo bucket and allow uploads of new files.
+                </p>
             </div>
         </div>
 
@@ -274,9 +195,9 @@
     <div class="container my-5 p-3 text-bg-light">
         <h2>DynamoDB - NoSQL CRUD</h2>
 
-        <div class="my-3 p-3 d-flex row">
+        <div class="my-1 d-flex row">
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-API-Gateway_32_svg__a">
@@ -295,7 +216,7 @@
                 </div>
             </div>
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_AWS-Lambda_32_svg__a">
@@ -314,7 +235,7 @@
                 </div>
             </div>
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-DynamoDB_32_svg__a">
@@ -333,7 +254,7 @@
                 </div>
             </div>
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%"
@@ -352,6 +273,14 @@
                     </svg>
                     AWS IAM
                 </div>
+            </div>
+        </div>
+
+        <div class="my-3">
+            <div class="text-bg-info p-2 my-2">
+                <p class="m-0"><span class="badge text-bg-warning">Requires login</span>
+                    Update entries in the NoSQL DynamoDB database using a rudimentary CRUD app.
+                </p>
             </div>
         </div>
 
@@ -406,11 +335,105 @@
     </div>
 
     <div class="container my-5 p-3 text-bg-light">
+        <h2>CloudFront + S3 - Static website hosting</h2>
+
+        <div class="my-1 d-flex row">
+            <div class="col-xs-6 col-xl-3 my-1">
+                <div class="text-bg-secondary">
+                    <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-CloudFront_32_svg__a">
+                                <stop stop-color="#4D27A8" offset="0%"></stop>
+                                <stop stop-color="#A166FF" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h40v40H0z" fill="url(#Arch_Amazon-CloudFront_32_svg__a)"></path>
+                            <path
+                                d="M28 26.497c0-.828-.673-1.5-1.5-1.5s-1.5.672-1.5 1.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5zm1 0a2.503 2.503 0 01-2.5 2.5 2.503 2.503 0 01-2.5-2.5 2.503 2.503 0 012.5-2.501c1.379 0 2.5 1.122 2.5 2.5zm-14-8.004c0-.827-.673-1.5-1.5-1.5s-1.5.673-1.5 1.5c0 .828.673 1.501 1.5 1.501s1.5-.673 1.5-1.5zm1 0a2.503 2.503 0 01-2.5 2.502 2.503 2.503 0 01-2.5-2.502 2.503 2.503 0 012.5-2.5c1.379 0 2.5 1.122 2.5 2.5zm4-8.003c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zm-1 0a2.503 2.503 0 012.5-2.501c1.379 0 2.5 1.122 2.5 2.501a2.503 2.503 0 01-2.5 2.501 2.503 2.503 0 01-2.5-2.5zm14 9.504c0-4.638-2.485-8.93-6.494-11.25-.721.145-1.416.344-2.28.657l-.34-.94a19.87 19.87 0 011.233-.405A12.95 12.95 0 0020 6.99c-.844 0-1.675.087-2.487.246.587.343 1.108.686 1.615 1.071l-.604.797c-.715-.543-1.457-1-2.426-1.51a13.016 13.016 0 00-9.007 10.963 17.602 17.602 0 013.116-.349l.025 1a16.32 16.32 0 00-3.218.389c-.004.132-.014.267-.014.398 0 4.335 2.146 8.33 5.676 10.736-.627-1.87-.95-3.638-.95-5.36 0-.985.169-1.793.347-2.649l.124-.602.981.193-.125.614c-.176.839-.327 1.562-.327 2.443 0 1.952.432 3.973 1.302 6.166a12.844 12.844 0 009.978.821c.502-.99.875-1.927 1.189-3.009l.961.28c-.228.787-.49 1.5-.801 2.21.804-.361 1.564-.81 2.279-1.33-.173-.426-.35-.85-.554-1.26l.895-.446c.171.343.313.701.463 1.054C31.335 27.377 33 23.83 33 19.995zm1 0c0 4.365-1.982 8.403-5.44 11.079a13.69 13.69 0 01-4.042 2.173c-1.44.5-2.961.754-4.518.754-2.3 0-4.584-.573-6.606-1.659A13.98 13.98 0 016.029 19.15C6.37 13.303 10.377 8.245 16 6.57c3.527-1.063 7.589-.632 10.842 1.208A14.015 14.015 0 0134 19.994zm-15.343-7.272l-.658-.753c-1.12.978-1.992 2.017-3.01 3.586l.838.544c.965-1.485 1.784-2.464 2.83-3.377zm-1.845 7.431c2.296.788 4.299 2.047 6.305 3.96l.69-.722c-2.113-2.018-4.233-3.347-6.67-4.184l-.325.946zm7.011-6.828c1.876 2.862 2.933 6.005 3.14 9.34l-.998.061c-.196-3.158-1.198-6.136-2.978-8.852l.836-.549z"
+                                fill="#FFF"></path>
+                        </g>
+                    </svg>
+                    AWS CloudFront
+                </div>
+            </div>
+            <div class="col-xs-6 col-xl-3 my-1">
+                <div class="text-bg-secondary">
+                    <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-S3-Standard_32_svg__a">
+                                <stop stop-color="#1B660F" offset="0%"></stop>
+                                <stop stop-color="#6CAE3E" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h40v40H0z" fill="url(#Arch_Amazon-S3-Standard_32_svg__a)"></path>
+                            <path
+                                d="M30.074 22.671l.2-1.301c1.703 1.016 1.735 1.444 1.732 1.46-.004.003-.308.24-1.932-.159zm-10.185-3.733a.995.995 0 01-.992.994.994.994 0 010-1.99c.547 0 .992.448.992.996zm7.869 12.33c0 .123-.495.31-.93.478l-.445.17c-.475.189-1.037.359-1.669.504-1.576.366-3.75.585-5.817.585-5.503 0-8.435-1.009-8.439-1.798L8.256 13.57c1.899 1.452 5.8 2.382 10.641 2.382 4.63 0 9.364-.897 11.584-2.472l-1.366 8.92c-2.871-.874-6.392-2.56-8.132-3.398l-.105-.05.002-.015c0-1.098-.89-1.99-1.983-1.99a1.988 1.988 0 00-1.983 1.99c0 1.097.89 1.99 1.983 1.99.733 0 1.367-.407 1.71-1.002 1.806.868 5.41 2.591 8.356 3.468l-1.205 7.874zm-8.86-23.273c6.676 0 11.857 1.86 11.894 3.465l-.024.148c-.27 1.579-5.352 3.35-11.87 3.35-6.388 0-10.71-1.725-10.89-3.375l-.015-.12c.023-1.678 4.397-3.468 10.904-3.468zm11.538 12.318l1.344-8.76c.001-.026.006-.05.006-.076C31.786 8.674 25.233 7 18.897 7 12.003 7 7 8.883 7 11.477l.003.061 2.468 19.73c0 2.6 7.852 2.732 9.426 2.732 2.137 0 4.394-.228 6.04-.61a12.74 12.74 0 001.81-.548l.432-.167c.844-.321 1.57-.598 1.564-1.331l1.18-7.684c.655.158 1.197.24 1.63.24.58-.001.973-.143 1.21-.428a.982.982 0 00.219-.832c-.127-.681-.923-1.405-2.546-2.327z"
+                                fill="#FFF"></path>
+                        </g>
+                    </svg>
+                    AWS S3
+                </div>
+            </div>
+            <div class="col-xs-6 col-xl-3 my-1">
+                <div class="text-bg-secondary">
+                    <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_AWS-CodePipeline_32_svg__a">
+                                <stop stop-color="#2E27AD" offset="0%"></stop>
+                                <stop stop-color="#527FFF" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h40v40H0z" fill="url(#Arch_AWS-CodePipeline_32_svg__a)"></path>
+                            <path
+                                d="M14 14h3v-1h-3v1zm4.952 15.799l-.93-.366 3.589-9.126.93.366-3.589 9.126zm4.243-2.433l2.653-2.326-2.65-2.297.655-.756 3.083 2.673a.498.498 0 01.002.754l-3.083 2.704-.66-.752zm-9.578-2.081a.5.5 0 01.017-.733l3.072-2.716.662.749-2.668 2.358 2.674 2.594-.695.718-3.062-2.97zM33 13H19v1h14v1.251A1.75 1.75 0 0131.251 17H9.108A2.111 2.111 0 017 14.891V14h5v-1H7V9.109C7 7.946 7.946 7 9.108 7h21.904A1.99 1.99 0 0133 8.989V13zM11 33h18V18H11v15zM31.012 6H9.108A3.113 3.113 0 006 9.109v5.782A3.113 3.113 0 009.108 18H10v15.5a.5.5 0 00.5.5h19a.5.5 0 00.5-.5V18h1.251A2.752 2.752 0 0034 15.251V8.989A2.992 2.992 0 0031.012 6z"
+                                fill="#FFF"></path>
+                        </g>
+                    </svg>
+                    AWS CodePipeline
+                </div>
+            </div>
+            <div class="col-xs-6 col-xl-3 my-1">
+                <div class="text-bg-secondary">
+                    <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient x1="0%" y1="100%" x2="100%" y2="0%"
+                                id="Arch_AWS-Certificate-Manager_32_svg__a">
+                                <stop stop-color="#BD0816" offset="0%"></stop>
+                                <stop stop-color="#FF5252" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h40v40H0z" fill="url(#Arch_AWS-Certificate-Manager_32_svg__a)"></path>
+                            <path
+                                d="M17.832 19.63c.133.12.19.3.152.476l-.513 2.362 2.27-1.391a.496.496 0 01.52 0l2.252 1.388-.498-2.367a.5.5 0 01.15-.47l2.014-1.84-2.665-.515a.496.496 0 01-.352-.27l-1.166-2.387-1.194 2.394a.497.497 0 01-.35.265l-2.657.518 2.037 1.838zm-1.58 3.765l.701-3.22-2.562-2.312a.498.498 0 01.237-.856l3.393-.66 1.534-3.075c.085-.17.286-.306.447-.276.19.001.362.11.445.28l1.5 3.068 3.39.656a.498.498 0 01.241.854l-2.533 2.316.68 3.223a.498.498 0 01-.748.525L20 22.083l-3.002 1.84a.492.492 0 01-.548-.018.495.495 0 01-.198-.51zm16.727-13.3l-.003-2.101H6.994v2.101h25.985zM34 32.502a.496.496 0 01-.497.498h-3.566v-.994h3.07L32.98 11.09H6.994v20.917h18.968V33H6.497a.5.5 0 01-.352-.145.5.5 0 01-.145-.352V7.497C6 7.223 6.222 7 6.497 7H33.47c.276 0 .497.223.497.497L34 32.502zm-22.942-2.527h3.974v-.993h-3.974v.993zm5.962.023h6.955v-.993H17.02v.993zm-5.962-3h3.974v-.993h-3.974v.994zm5.962 0h10.93v-.993H17.02v.994z"
+                                fill="#FFF"></path>
+                        </g>
+                    </svg>
+                    AWS Certificate Manager
+                </div>
+            </div>
+        </div>
+
+        <div class="my-3">
+            <div class="text-bg-info p-2 my-2">
+                <p class="m-0">
+                    This demo is hosted in a S3 bucket which is automatically deployed to when any new code is pushed to
+                    GitHub use an AWS CodePipeline integration. The subdomain of kylebignell.co.uk is pointed to the AWS
+                    bucket and SSL is provided using AWS CloudFront and Certificate Manager.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 p-3 text-bg-light">
         <h2>Misc.</h2>
 
-        <div class="my-3 p-3 d-flex row">
+        <div class="my-1 d-flex row">
             <div class="col-xs-6 col-xl-3 my-1">
-                <div class="text-bg-info">
+                <div class="text-bg-secondary">
                     <svg class="w-6 h-6" height="40" width="40" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="Arch_Amazon-CloudWatch_32_svg__a">
@@ -428,6 +451,23 @@
                     AWS CloudWatch
                 </div>
             </div>
+        </div>
+
+        <div class="my-3">
+            <div class="text-bg-info p-2 my-2">
+                <p class="m-0">
+                    AWS CloudWatch is used to monitor and debug requests coming in through the API Gateway as well as
+                    the AWS Lambda executions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 p-3 text-center">
+        <div class="alert alert-primary" role="alert">
+            AWS icons by <a href="https://awsicons.dev/" target="_blank">https://awsicons.dev/</a>. Source code
+            available on <a href="https://github.com/kyle-bignell/aws-integrations-demo/blob/master/index.html"
+                target="_blank">GitHub</a>.
         </div>
     </div>
 
