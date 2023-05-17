@@ -69,10 +69,10 @@
             <h3>Login</h3>
 
             <div class="text-bg-info p-2 my-2">
-                <p>All integrations are protected behind user logins. AWS Cognito provides a JWT token
+                <p class="m-0">All integrations are protected behind user logins. AWS Cognito provides a JWT token
                     that is used to authenticate against the APIs exposed by the API Gateway.</p>
-                <button class="btn btn-primary" onclick="login()">Login</button>
             </div>
+            <button class="btn btn-primary" onclick="login()">Login</button>
         </div>
     </div>
 
@@ -421,8 +421,9 @@
             <div class="text-bg-info p-2 my-2">
                 <p class="m-0">
                     This demo is hosted in a S3 bucket which is automatically deployed to when any new code is pushed to
-                    GitHub use an AWS CodePipeline integration. The subdomain of kylebignell.co.uk is pointed to the AWS
-                    bucket and SSL is provided using AWS CloudFront and Certificate Manager.
+                    GitHub using an AWS CodePipeline integration. The subdomain of kylebignell.co.uk is pointed to the
+                    AWS
+                    S3 bucket and SSL is provided using AWS CloudFront and Certificate Manager.
                 </p>
             </div>
         </div>
